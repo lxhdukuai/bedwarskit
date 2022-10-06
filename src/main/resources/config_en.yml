@@ -1,0 +1,91 @@
+#BedwarsKit configuration file
+
+#Enable title of digging bed
+break_bed_title: true
+#Available variables:
+#{BreakPlayerName}=Name of the player who destroyed the bed
+#{BreakPlayerTeamColor}=The team color code of the player who destroys the bed
+#{breakPlayerTeamName}=Team name of the player who destroyed the bed
+#{BreakTeamName} The team name of the player whose bed was destroyed
+#{BreakTeamColor}=the team color code of the player whose bed has been destroyed
+break_title_all: "{BreakTeamColor}{BreakTeamName}&c's bed got destoryed"
+break_subtitle_all: "&7destory by:{BreakPlayerTeamColor}{BreakPlayerName}"
+break_title_breakPlayer: "{BreakTeamColor}{BreakTeamName}"
+break_subtitle_breakPlayer: "&abed destory by you"
+break_title_breakTeam: "&cBed destoryed"
+break_subtitle_breakTeam: "&7destory by:{BreakPlayerTeamColor}{BreakPlayerName}"
+
+#Disable hunger
+no_hunger: true
+
+#Disable Ender Pearl Damage
+#This will also disable fall damage
+no_pearl_damage: true
+
+#Anti jamming bed
+#Check your feet when the player destroys the bed
+#Transport up to prevent jamming in the bed
+break_bed_check: true
+#It is set as the upward transmission distance. 
+#It must be of double type, such as - 2.0, 5.28
+tp_dis: 0.74
+
+#Customize the scoreboard
+#Use a custom scoreboard
+custom_scoreboard: true
+scoreboard_title: "&eBedwars"
+line13_2v2: "&emc.bedwars.org"
+line9_4v4: "&emc.bedwars.org"
+
+#Death Game Mode
+#Fixed a detail, because Bedwars1058 player characters will 
+#not be invisible during the resurrection countdown
+#This will set the player's game mode to spectator mode
+death_gamemode: true
+#Title and subtitle in rebirth
+#Variable:
+#{timeleft}=time remaining
+respawn_title: "&aRespawn in &e{timeleft}&a second"
+respawn_subtitle: ""
+#Title and subtitle in rebirth
+#Variable:
+#{timeleft}=time remaining
+respawn_succ_title: "&aReturned to the city"
+respawn_succ_subtitle: ""
+
+meaning_teambed_yes: "&a&l✔"
+meaning_team_none: "&c&l✘"
+#Variable
+#{aliveCount}=number of survivors
+meaning_teambed_no: "&f{aliveCount}"
+#Variable
+#{teamColor}=team color
+meaning_You: "{teamColor}➜"
+meaning_NotYou: "  "
+
+#Judgment as the basis of BedwarsRel game
+rushworld: "rush"
+rushworld2v2: "2v2rush"
+rushworld4v4: "4v4rush"
+lobbyworld: "lobby"
+
+#Anti Drop Item
+anti_drop: true
+
+#Respawn Delay (Secound)
+respawn_delay: 5
+
+#Feedback
+switchworld_fall: true
+
+#TeamName
+#Must be consistent
+team:
+  RED: "Red"
+  BLUE: "Blue"
+  GREEN: "Green"
+  YELLOW: "Yellow"
+  AQUA: "Aqua"
+  WHITE: "White"
+  GRAY: "Gray"
+  PINK: "Pink"

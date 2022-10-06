@@ -1,0 +1,4 @@
+name: BedwarsKit
+version: 1.2
+main: io.github.bedwarskit.Main
+api-version: 1.13
