@@ -1,0 +1,4 @@
+name: BedwarsKit
+version: 1.4
+main: github.tsffish.bedwarskit.Main
+api-version: 1.13

@@ -1,0 +1,133 @@
+#BedwarsKit配置文件
+
+#是否启用挖床标题
+break_bed_title: true
+#可用变量:
+#{BreakPlayerName} = 破坏床的玩家的名字
+#{BreakPlayerTeamColor} = 破坏床的玩家的队伍颜色代码
+#{breakPlayerTeamName} = 破坏床的玩家的队伍名字
+#{BreakTeamName} 被破坏床的玩家的队伍名字
+#{BreakTeamColor} = 被破坏床的玩家的队伍颜色代码
+break_title_all: "{BreakTeamColor}{BreakTeamName}&c的床已被摧毁"
+break_subtitle_all: "&7摧毁者:{BreakPlayerTeamColor}{BreakPlayerName}"
+break_title_breakPlayer: "{BreakTeamColor}{BreakTeamName}"
+break_subtitle_breakPlayer: "&a床已被你摧毁"
+break_title_breakTeam: "&c床已被摧毁"
+break_subtitle_breakTeam: "&7摧毁者:{BreakPlayerTeamColor}{BreakPlayerName}"
+
+#是否禁用饥饿值
+no_hunger: true
+
+#是否禁用末影珍珠伤害
+#这将同时禁用摔落伤害
+no_pearl_damage: true
+
+#防卡床
+#在玩家破坏床时检查脚下时候为床
+#向上传送,以防止卡在床内
+break_bed_check: true
+#设置为传送时向上传送的距离,必须是double类型,比如-2.0, 5.28
+tp_dis: 0.74
+
+#自定义计分板
+#使用自定义的计分板
+custom_scoreboard: true
+scoreboard_title: "&e起床战争"
+line13_2v2: "&emc.bedwars.org"
+line9_4v4: "&emc.bedwars.org"
+
+#死亡游戏模式
+#修复了一个细节，因为Bedwars1058在复活倒计时时玩家人物不会隐身
+#这将将玩家的游戏模式设置为旁观模式
+death_gamemode: true
+#重生中标题与副标题
+#可用变量:
+#{timeleft} = 剩余时间
+respawn_title: "&e{timeleft}&a秒后复活"
+respawn_subtitle: ""
+#已重生标题与副标题
+#可用变量:
+#{timeleft} = 剩余时间
+respawn_succ_title: "&a已回城"
+respawn_succ_subtitle: ""
+
+#击杀效果
+kill_effect: true
+
+meaning_teambed_yes: "&a&l✔"
+meaning_team_none: "&c&l✘"
+#可用变量:
+#{aliveCount} = 存活人数
+meaning_teambed_no: "&f{aliveCount}"
+#变量
+#{teamColor} = 队伍颜色
+meaning_You: "{teamColor}➜"
+meaning_NotYou: "  "
+
+#判断世界的依据
+rushworld: "rush"
+rushworld2v2: "2v2rush"
+rushworld4v4: "4v4rush"
+lobbyworld: "lobby"
+
+#防止丢弃物品
+anti_drop: true
+
+#重生延迟 (秒)
+respawn_delay: 5
+
+#反馈
+switchworld_fall: true
+
+#队伍名
+#必须一致
+team:
+  RED: "红之队"
+  BLUE: "蓝之队"
+  GREEN: "绿之队"
+  YELLOW: "黄之队"
+  AQUA: "青之队"
+  WHITE: "白之队"
+  GRAY: "灰之队"
+  PINK: "粉之队"
+
+startkit_compass: true
+
+#NUT!保留信息
+#NU!ArmorLevel
+#NU!0:Leather
+#NU!1:ChainMail
+#NU!2:Iron
+#NU!3:Diamond
+#GT!gameTeam:
+#GT!  沙漠矿场:
+#GT!    - RED: 红之队
+#GT!    - BLUE: 蓝之队
+#GT!    - GREEN: 绿之队
+#GT!    - YELLOW: 黄之队
+#GT!  瀑布:
+#GT!    - RED: 红之队
+#GT!    - BLUE: 蓝之队
+#GT!    - GREEN: 绿之队
+#GT!    - YELLOW: 黄之队
+#GT!  平原:
+#GT!    - RED: 红之队
+#GT!    - BLUE: 蓝之队
+#GT!    - GREEN: 绿之队
+#GT!    - YELLOW: 黄之队
+#GT!    - WHITE: 白之队
+#GT!    - AQUA: 青之队
+#GT!    - GRAY: 灰之队
+#GT!   - PINK: 粉之队
+#GT! 树洞:
+#GT!    - RED: 红之队
+#GT!    - BLUE: 蓝之队
+#GT!    - GREEN: 绿之队
+#GT!    - YELLOW: 黄之队
+#GT!   - WHITE: 白之队
+#GT!   - AQUA: 青之队
+#GT!   - GRAY: 灰之队
+#GT!  - PINK: 粉之队
+#CK!Velocity (Failed)
+#CK!Vector te = p.getLocation().toVector().subtract(p.getLocation().toVector()).normalize().setY(0.3).multiply(2);
+#CK!p.setvelocity(te);
