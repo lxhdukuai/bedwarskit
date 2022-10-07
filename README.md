@@ -1,3 +1,2 @@
 # BedwarsKit
-A Minecraft Spigot Plugin to let you receive kit on game start. Create for special scenes: including BedwarsRel and Bedwars1058 's single server mode
-A Simple Addon for BedwarsRel, let you receive kit on game start.
+允许你在游戏开始时收到基础武器,是整合包中的插件
