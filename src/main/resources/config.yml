@@ -1,0 +1,62 @@
+break_bed_title: true
+break_title_all: "{BreakTeamColor}{BreakTeamName}&c的床已被摧毁"
+break_subtitle_all: "&7摧毁者:{BreakPlayerTeamColor}{BreakPlayerName}"
+break_title_breakPlayer: "{BreakTeamColor}{BreakTeamName}"
+break_subtitle_breakPlayer: "&a床已被你摧毁"
+break_title_breakTeam: "&c床已被摧毁"
+break_subtitle_breakTeam: "&7摧毁者:{BreakPlayerTeamColor}{BreakPlayerName}"
+
+no_hunger: true
+
+hunger_level: 20
+
+no_pearl_damage: true
+
+break_bed_check: true
+tp_dis: 0.74
+
+custom_scoreboard: true
+scoreboard_title: "&e起床战争"
+server_ip: "&emc.bedwars.org"
+
+kill_effect: true
+
+mean_teambed_yes: "&a&l✔"
+mean_team_none: "&c&l✘"
+mean_teambed_no: "&f{aliveCount}"
+mean_You: "{teamColor}➜"
+mean_NotYou: "   "
+
+rushworld: "rush"
+rushworld2v2: "2v2rush"
+rushworld4v4: "4v4rush"
+lobbyworld: "lobby"
+
+anti_drop: true
+
+death_gamemode:
+  enable: true
+  respawn_delay: 5
+  respawn_title: "&e{timeleft}&a秒后复活"
+  respawn_subtitle: ""
+  respawn_succ_title: "&a已回城"
+  respawn_succ_subtitle: ""
+
+switchworld_fall:
+  enable: true
+
+rushmode_speed:
+  enable: true
+  level: 1
+
+team:
+  RED: "红之队"
+  BLUE: "蓝之队"
+  GREEN: "绿之队"
+  YELLOW: "黄之队"
+  AQUA: "青之队"
+  WHITE: "白之队"
+  GRAY: "灰之队"
+  PINK: "粉之队"
+
+startkit_compass: true
