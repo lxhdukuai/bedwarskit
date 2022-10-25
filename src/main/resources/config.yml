@@ -1,0 +1,142 @@
+#####################
+# BedwarsKit 配置文件 #
+#####################
+
+# BedwarslRel 功能
+# 游戏世界判断依据是“世界判断依据”
+
+# 挖床标题
+# 是否启用
+break_bed_title: true
+# 可用变量:
+# {BreakTeamColor} = 被破坏床的队伍的颜色代码
+# {BreakTeamName} = 被破坏床的队伍名字
+# {BreakPlayerTeamColor} = 破坏床的玩家的队伍的颜色代码
+# {BreakPlayerName} = 破坏床的玩家名
+# 向当局所有人显示的标题
+break_title_all: "{BreakTeamColor}{BreakTeamName}&c的床已被摧毁"
+# 向当局所有人显示的副标题
+break_subtitle_all: "&7摧毁者:{BreakPlayerTeamColor}{BreakPlayerName}"
+# 向挖床者显示的标题
+break_title_breakPlayer: "{BreakTeamColor}{BreakTeamName}"
+# 向挖床者显示的副标题
+break_subtitle_breakPlayer: "&a床已被你摧毁"
+# 向被挖床的队伍内的所有玩家显示的标题
+break_title_breakTeam: "&c床已被摧毁"
+# 可用变量:
+# 向被挖床的队伍内的所有玩家显示的副标题
+break_subtitle_breakTeam: "&7摧毁者:{BreakPlayerTeamColor}{BreakPlayerName}"
+
+# 防止饥饿
+no_hunger: true
+# 饥饿值
+hunger_level: 20
+
+# 防止末影珍珠伤害
+no_pearl_damage: true
+
+break_bed_check: true
+tp_dis: 0.74
+
+# 自定义计分板
+# 一共有2个模式 2v2 , 4v4
+# 是否开启
+custom_scoreboard: true
+# 计分板标题 (共用)
+scoreboard_title: "&e起床战争"
+server_ip: "&emc.bedwars.org"
+
+# 自定义计分板的变量
+# 一些字符代表
+# 状态: 存在
+mean_teambed_yes: "&a&l✔"
+# 状态: 不存在
+mean_team_none: "&c&l✘"
+# 状态: 无床
+# 可用变量:
+# {aliveCount} = 该队伍的存活人数
+mean_teambed_no: "&f{aliveCount}"
+# 代表: 你的所在队伍
+mean_You: "{teamColor}➜"
+# 代表: 这不是你的所在队伍
+mean_NotYou: "   "
+
+# BedwarsRel
+# 击杀特效
+kill_effect: true
+
+# 世界判断依据
+# 世界名包含此字符的都会被当成BedwarsRel的游戏世界
+rushworld: "rush"
+# 世界名包含此字符的都会被当成BedwarsRel2v2的游戏世界 (特别的计分板)
+rushworld2v2: "2v2rush"
+# 世界名包含此字符的都会被当成BedwarsRel4v4的游戏世界 (特别的计分板)
+rushworld4v4: "4v4rush"
+# 世界名包含此字符的都会被当成大厅世界
+lobbyworld: "lobby"
+
+# BedwarsRel
+# 防止玩家丢弃物品
+# 木剑 < 石剑 < 铁剑 < 钻剑
+anti_drop: true
+nodroplist:
+  - LEATHER_HELMET
+  - LEATHER_CHESTPLATE
+  - LEATHER_LEGGINGS
+  - LEATHER_BOOTS
+  - CHAINMAIL_LEGGINGS
+  - CHAINMAIL_BOOTS
+  - IRON_LEGGINGS
+  - IRON_BOOTS
+  - DIAMOND_LEGGINGS
+  - DIAMOND_BOOTS
+# 死亡游戏模式 (此功能同时对Bedwars1058有效)
+# 修复了一个细节，因为Bedwars1058在重生倒计时时任务不会隐身
+# 这将玩家的游戏模式设置为旁观模式
+# 给BedwarsRel添加了一个重生计时功能
+death_gamemode:
+  enable: true
+  respawn_delay: 5
+  respawn_title: "&e{timeleft}&a秒后复活"
+  respawn_subtitle: ""
+  respawn_succ_title: "&a已回城"
+  respawn_succ_subtitle: ""
+
+# 是否在返回大厅时增强反馈
+switchworld_fall:
+  enable: true
+
+# 是否给玩家速度效果
+rushmode_speed:
+  enable: true
+  level: 1
+
+# 你设置的BedwarsRel的队伍名字
+# 必须一致才能使自定义计分板生效
+rel_team_name:
+  Red: "红之队"
+  Blue: "蓝之队"
+  Green: "绿之队"
+  Yellow: "黄之队"
+  Aqua: "青之队"
+  White: "白之队"
+  Gray: "灰之队"
+  Pink: "粉之队"
+
+# 是否要将指南针包含在初始职业中
+startkit_compass: true
+
+# BedwarslRel的队伍颜色代码
+# 除非你正在使用自行构建，修改过队伍颜色名的BedwarsRel插件，否则你不应该更改这些
+rel_teamcolor_name:
+  Red: "RED"
+  Blue: "BLUE"
+  Green: "GREEN"
+  Yellow: "YELLOW"
+  Aqua: "AQUA"
+  White: "WHITE"
+  Gray: "GRAY"
+  Pink: "LIGHT_PURPLE"
+
+lang:
+  reloaded: "已重新加载配置文件"

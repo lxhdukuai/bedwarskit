@@ -1,0 +1,15 @@
+name: BedwarsKit
+version: 1.8
+main: github.tsffish.bedwarskit.Main
+commands:
+  bwkitreload:
+    description: reload the config file
+  bwkitrl:
+    description: reload the config file
+permissions:
+  bedwarskit.command.bwkitreload:
+    description: up
+    default: op
+  bedwarskit.command.bwkitrl:
+    description: up
+    default: op
